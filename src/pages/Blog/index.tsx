@@ -1,7 +1,9 @@
+import { Profile } from './components/profile'
+
 export function Blog() {
   return (
-    <div>
-      <p>Blog</p>
-    </div>
+    <>
+      <Profile />
+    </>
   )
 }
