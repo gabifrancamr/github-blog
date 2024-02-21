@@ -7,8 +7,6 @@ import { useCallback, useEffect, useState } from 'react'
 import { api } from '../../../../lib/axios'
 import { Spinner } from '../../../../components/Spinner'
 
-const username = import.meta.env.VITE_GITHUB_USERNAME
-
 interface ProfileData {
   login: string
   bio: string
@@ -26,16 +24,16 @@ export function Profile() {
   const getProfileData = useCallback(async () => {
     try {
       setIsLoading(true)
-      const response = await api.get(`/users/${username}`)
+      const response = await api.get(`/users/gabifrancamr`)
       setProfileData(response.data)
     } finally {
       setIsLoading(false)
     }
-  }, [profileData])
+  }, [])
 
   useEffect(() => {
     getProfileData()
-  }, [])
+  }, [getProfileData])
 
   return (
     <ProfileContainer>
