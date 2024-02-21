@@ -27,7 +27,7 @@ export function PostHeader({ postData, isLoading }: PostHeaderProps) {
       ) : (
         <>
           <header>
-            <NavLink to="/">
+            <NavLink to="/github-blog">
               <div>
                 <FontAwesomeIcon icon={faChevronLeft} />
                 <span>Voltar</span>

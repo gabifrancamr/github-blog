@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Post } from './components/Post'
 import { SearchInput } from './components/SearchInput'
-import { Profile } from './components/profile'
+import { Profile } from './components/Profile'
 import { PostsListContainer } from './styles'
 import { api } from '../../lib/axios'
 import { Spinner } from '../../components/Spinner'
