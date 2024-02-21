@@ -5,6 +5,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faBuilding, faUserGroup } from '@fortawesome/free-solid-svg-icons'
 import { useCallback, useEffect, useState } from 'react'
 import { api } from '../../../../lib/axios'
+import { Spinner } from '../../../../components/Spinner'
 
 const username = import.meta.env.VITE_GITHUB_USERNAME
 
@@ -38,31 +39,37 @@ export function Profile() {
 
   return (
     <ProfileContainer>
-      <ProfilePicture src={profileData.avatar_url} />
+      {isLoading ? (
+        <Spinner />
+      ) : (
+        <>
+          <ProfilePicture src={profileData.avatar_url} />
 
-      <ProfileDetails>
-        <header>
-          <h1>{profileData.name}</h1>
-          <ExternalLink text="github" href={profileData.html_url} />
-        </header>
-        <p>{profileData.bio}</p>
-        <ul>
-          <li>
-            <FontAwesomeIcon icon={faGithub} />
-            {profileData.login}
-          </li>
-          {profileData.company && (
-            <li>
-              <FontAwesomeIcon icon={faBuilding} />
-              {profileData.company}
-            </li>
-          )}
-          <li>
-            <FontAwesomeIcon icon={faUserGroup} />
-            {profileData.followers} seguidores
-          </li>
-        </ul>
-      </ProfileDetails>
+          <ProfileDetails>
+            <header>
+              <h1>{profileData.name}</h1>
+              <ExternalLink text="github" href={profileData.html_url} />
+            </header>
+            <p>{profileData.bio}</p>
+            <ul>
+              <li>
+                <FontAwesomeIcon icon={faGithub} />
+                {profileData.login}
+              </li>
+              {profileData.company && (
+                <li>
+                  <FontAwesomeIcon icon={faBuilding} />
+                  {profileData.company}
+                </li>
+              )}
+              <li>
+                <FontAwesomeIcon icon={faUserGroup} />
+                {profileData.followers} seguidores
+              </li>
+            </ul>
+          </ProfileDetails>
+        </>
+      )}
     </ProfileContainer>
   )
 }
