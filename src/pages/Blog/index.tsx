@@ -18,6 +18,9 @@ export interface IPost {
   }
 }
 
+const userName = 'gabifrancamr'
+const repo = 'blog-posts'
+
 export function Blog() {
   const [posts, setPosts] = useState<IPost[]>([])
   const [isLoading, setIsLoading] = useState(true)
@@ -26,7 +29,7 @@ export function Blog() {
     try {
       setIsLoading(true)
       const response = await api.get(
-        `/search/issues?q=${query}%20label:published%20repo:gabifrancamr/blog-posts`,
+        `/search/issues?q=${query}%20label:published%20repo:${userName}/${repo}`,
       )
       setPosts(response.data.items)
     } finally {

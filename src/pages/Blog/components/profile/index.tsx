@@ -17,6 +17,8 @@ interface ProfileData {
   followers: number
 }
 
+const userName = 'gabifrancamr'
+
 export function Profile() {
   const [profileData, setProfileData] = useState<ProfileData>({} as ProfileData)
   const [isLoading, setIsLoading] = useState(true)
@@ -24,7 +26,7 @@ export function Profile() {
   const getProfileData = useCallback(async () => {
     try {
       setIsLoading(true)
-      const response = await api.get(`/users/gabifrancamr`)
+      const response = await api.get(`/users/${userName}`)
       setProfileData(response.data)
     } finally {
       setIsLoading(false)

@@ -5,6 +5,9 @@ import { api } from '../../lib/axios'
 import { useParams } from 'react-router-dom'
 import { PostContent } from './components/PostContent'
 
+const userName = 'gabifrancamr'
+const repo = 'blog-posts'
+
 export function Post() {
   const [postData, setPostData] = useState<IPost>({} as IPost)
   const [isLoading, setIsLoading] = useState(true)
@@ -15,9 +18,7 @@ export function Post() {
     try {
       setIsLoading(true)
 
-      const response = await api.get(
-        `/repos/gabifrancamr/blog-posts/issues/${id}`,
-      )
+      const response = await api.get(`/repos/${userName}/${repo}/issues/${id}`)
 
       setPostData(response.data)
     } finally {
