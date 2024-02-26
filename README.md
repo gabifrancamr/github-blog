@@ -7,4 +7,6 @@ Nesse desafio, desenvolvi uma aplicação que utiliza da API do GitHub para busc
 - Criar uma página para exibir um post (issue) completo
 
 Nesse projeto usei:  Fetch / Axios, Roteamento e React Router DOM, Formulários
+
+
 As API's do github usadas: GitHub Users API, GitHub Search API e GitHub Issues API
