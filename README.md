@@ -5,8 +5,5 @@ Nesse desafio, desenvolvi uma aplicação que utiliza da API do GitHub para busc
 - Listagem do seu perfil com imagem, número de seguidores, nome e outras informações disponíveis pela API do GitHub.
 - Listar e filtrar todas as issues do repositório com um pequeno resumo do conteúdo dela
 - Criar uma página para exibir um post (issue) completo
-Nesse projeto usei: 
-- Fetch / Axios
-- Roteamento e React Router DOM
-- Formulários
+Nesse projeto usei:  Fetch / Axios, Roteamento e React Router DOM, Formulários
 As API's do github usadas: GitHub Users API, GitHub Search API e GitHub Issues API
