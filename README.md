@@ -1,12 +1,10 @@
 # React + TypeScript + Vite
 
-link do projeto: https://gabifrancamr.github.io/github-blog/
+Project link: https://gabifrancamr.github.io/github-blog/
 
-Mais um desafio concluído! Esse foi para praticar a utilização de clientes HTTP consumindo a API do Github para criar um blog pessoal.
-Nesse desafio, desenvolvi uma aplicação que utiliza da API do GitHub para buscar issues de um repositório, dados do seu perfil e essas informações são exibidas como um blog.
-- Listagem do seu perfil com imagem, número de seguidores, nome e outras informações disponíveis pela API do GitHub.
-- Listar e filtrar todas as issues do repositório com um pequeno resumo do conteúdo dela
-- Criar uma página para exibir um post (issue) completo
+Another challenge completed! This one was to practice using HTTP clients consuming the Github API to create a personal blog. In this challenge, I developed an application that uses the GitHub API to fetch issues from a repository, data from your profile, and displays this information as a blog.
 
-Nesse projeto usei:  Fetch / Axios, Roteamento e React Router DOM, Formulários
-As API's do github usadas: GitHub Users API, GitHub Search API e GitHub Issues API
+Listing your profile with image, number of followers, name, and other information available through the GitHub API.
+Listing and filtering all the issues from the repository with a brief summary of their content.
+Creating a page to display a complete post (issue).
+In this project, I used: Fetch / Axios, Routing and React Router DOM, Forms. The GitHub APIs used: GitHub Users API, GitHub Search API, and GitHub Issues API.
