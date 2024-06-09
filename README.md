@@ -2,9 +2,18 @@
 
 Project link: https://gabifrancamr.github.io/github-blog/
 
-Another challenge completed! This one was to practice using HTTP clients consuming the Github API to create a personal blog. In this challenge, I developed an application that uses the GitHub API to fetch issues from a repository, data from your profile, and displays this information as a blog.
+Desenvolvi essa aplicação que utiliza da API do GitHub para buscar issues de um repositório e dados do seu perfil. Essas informações são exibidas como um blog.
+- Listagem do seu perfil com imagem, número de seguidores, nome e outras informações disponíveis pela API do GitHub.
+- Listar e filtrar todas as issues do repositório com um pequeno resumo do conteúdo dela
+- Criar uma página para exibir um post (issue) completo
 
-Listing your profile with image, number of followers, name, and other information available through the GitHub API.
-Listing and filtering all the issues from the repository with a brief summary of their content.
-Creating a page to display a complete post (issue).
-In this project, I used: Fetch / Axios, Routing and React Router DOM, Forms. The GitHub APIs used: GitHub Users API, GitHub Search API, and GitHub Issues API.
+Nesse projeto usei: 
+- Fetch / Axios
+- Roteamento e React Router DOM
+- Formulários
+  
+Além das API's do github: GitHub Users API, GitHub Search API e GitHub Issues API
+
+https://github.com/gabifrancamr/github-blog/assets/95250838/c5fca5ad-182f-48d7-bc8d-62d8a94beb7b
+
+
